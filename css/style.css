@@ -1,0 +1,138 @@
+/* 
+    Document   : style
+    Created on : Feb 25, 2013, 10:38:04 AM
+    Author     : mika2
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html,
+body {
+    background-color: #3d79d0;
+    font-family: ubuntu;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+	overflow:auto;
+}
+
+.page {
+    max-width: 980px;
+    width: 980px;
+    margin: auto;
+}
+
+footer,
+header {
+    margin: 1em 0em;
+    height: 200px;
+    width: 100%;
+}
+
+header, footer, article, #sidebar {
+    border: 2px dashed white;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+article {
+    float: left;
+    width: 74%;
+}
+
+#sidebar {
+    width: 24%;
+    float: right;
+}
+
+#sidebar > img {
+    /*width: 100%;
+    height: auto;
+    margin: 1em 0;*/
+}
+
+.link {
+	cursor:pointer;
+}
+
+tr, td {
+	margin:0;
+	padding:0;
+}
+
+.handle {
+	width: 20px;
+	height: 15px;
+	float: right;
+	cursor: move;
+}
+
+.fadeout {
+    position: absolute;
+    bottom: 0em;
+    width:100%;
+    height: 1.2em;
+    background: -webkit-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    ); 
+    background-image: -moz-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+
+#tweets_container {
+	padding: 4px 3% 4px 3%;
+	color: #555555;
+	overflow: auto;
+}
+.seperator {
+	border-bottom: 1px dotted #aaaaaa;
+	margin: 0px 10px 5px 10px;
+	height: 5px;
+}
+.tweet {
+	height: 17%;
+	clear: both;
+	margin-bottom: 4px;
+	font-size: 70%;
+}
+.tweet > img {
+	float: left;
+	width: 20%;
+}
+.tweet > .content {
+	float: right;
+	width: 79%;
+	height: 70%;
+	overflow: hidden;
+	cursor: pointer;
+	position :relative;
+}
+.tweet > .content:hover {
+	color: #222222;
+}
+.tweet .small {
+	margin-left: 20%;
+	width: 79%;
+	padding: 5px 0px 5px 0px;
+	font-size: 0.9em;
+	float: left;
+}
+
+.alt_color {
+	color: #00acee;
+}
